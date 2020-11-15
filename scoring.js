@@ -95,9 +95,9 @@ $(document).ready(function(){
   });
   // 「最終ジャッジ」(id="btn-declaration")ボタンを押したら「function judgement()」が出力される処理です。
   $('#btn-declaration').click(function() {
+    // $("#declaration").append(judgement());
+    $('#alert-indicate').remove();
     $("#declaration").append(judgement());
-    // $('#alert-indicate').remove();
-    // $('#declaration').text(judgement());
   });
 });
 // ここに書かれているjsの記述はあくまでヒントとして用意された雛形なので、書かれている記述に従わずに実装したいという場合は、自分の好きに実装して構わない。課題要件を満たし、コードの品質が一定の水準にあると判定されればどのような実装でも合格になる。
